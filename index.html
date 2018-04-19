@@ -1,0 +1,8 @@
+<canvas id=a height=220><video id=v><svg onload="navigator.getUserMedia({video:1},m=>{v.src=top.URL.createObjectURL(m);setInterval(u,19)},m=>0);u=async(c=a.getContext`2d`)=>{c.drawImage(v,0,0,300,220);for(i of await new FaceDetector().detect(a))b=i.boundingBox,c.beginPath(),c.rect(b.x,b.y,b.width,b.height);c.stroke()}">
+
+</canvas>
+<pre>
+// Mini Multiple Face Detection in 321b of HTML+JS
+// Inspired by: <a href="https://codepen.io/wottpal/pen/mXdRoj/">codepen.io/wottpal/pen/mXdRoj</a>
+// Requires Chrome + chrome://flags/#enable-experimental-web-platform-features
+</pre>
