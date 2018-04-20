@@ -1,8 +1,8 @@
-﻿<canvas id=a><video id=v><svg onload="navigator.getUserMedia({video:1},n=m=>{v.src=top.URL.createObjectURL(m);setInterval(async(c=a.getContext`2d`)=>{c.drawImage(v,0,0,208,150);for(i of await new FaceDetector({fastMode: true, maxDetectedFaces: 2}).detect(a))with(i.boundingBox)c.strokeRect(x,y,width,height)},9)},n)">
+﻿<canvas id=a><video id=v><svg onload="navigator.getUserMedia({video:1},n=m=>{v.src=top.URL.createObjectURL(m);setInterval(async(c=a.getContext`2d`)=>{c.drawImage(v,0,0,208,150);for(i of await new FaceDetector().detect(a))with(i.boundingBox)c.strokeRect(x,y,width,height)},9)},n)">
 
 </canvas>
 <pre>
-// Mini Face Detection in 280b of HTML+JS
+// Mini Real Time Face Detection in 280b of HTML+JS
 // Golfed by <a href="//xem.github.io">xem</a> and <a href="www.p01.org">p01</a>
 // Inspired by: <a href="https://codepen.io/wottpal/pen/mXdRoj/">codepen.io/wottpal/pen/mXdRoj</a>
 // Requires Chrome + chrome://flags/#enable-experimental-web-platform-features
